@@ -121,7 +121,7 @@ module ActiveEnum
           if arg
             send(attribute) == self.class.active_enum_for(attribute)[arg]
           else
-            super
+            super(*arg)
           end
         end
       end
